@@ -1,3 +1,11 @@
+// 1. replace blue filter button with red
+// 2. add green filter button
+// 3. add notes
+// 4. capitalize names
+// 5. add dropdown menu
+// 6. search box for ID
+
+
 console.log("hello beautiful")
 import { loadLegos, useLegos } from './legos/LegoData.js'
 import { makeLegoList } from './legos/LegoList.js';
