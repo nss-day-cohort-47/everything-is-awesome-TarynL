@@ -7,6 +7,7 @@ export const LegoDetail = (brick) => {
               <div class="block-years">Manufactured ${brick.YearFrom} - ${brick.YearTo}</div>
               <div id="block-material">Material: ${brick.Material}</div>
               <div class="block-notes">Notes: ${brick.Notes}</div>
+              <div class="block-id">Lego ID: ${brick.LegoId}</div>
               </section>`;
   const link = brick.ColorstreamLinkImage;
   if (link) {

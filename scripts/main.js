@@ -63,6 +63,22 @@ startEIA();
 		makeLegoList(filterByMaterial);
 	}
 
+const searchElement = document.querySelector("#showID")
 
+searchElement.addEventListener("keyup", (event) => {
+	if (event.keyCode === 13) {
+		const searchId = (searchElement.value);
+		showSearchedId(searchId)
 
+	}
+})
 
+const showSearchedId = (lego) => {
+
+	const filterById = useLegos().filter (singleId => {
+		if (singleId.LegoId === lego){
+			return singleId;
+		}
+	})
+	makeLegoList(filterById);
+}
