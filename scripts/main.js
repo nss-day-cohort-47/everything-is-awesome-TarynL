@@ -43,3 +43,26 @@ const startEIA = () => {
 }
 
 startEIA();
+
+
+
+
+	navElement.addEventListener("change", event => {
+		if (event.target.id === "sort-material") {
+			const selectedMaterial = event.target.value
+			showFilteredMaterials(selectedMaterial)
+		}
+	})
+
+	const showFilteredMaterials = (block) => {
+		const filterByMaterial = useLegos().filter(singleMaterial =>{
+			if (singleMaterial.Material === block) {
+				return singleMaterial
+			}
+		})
+		makeLegoList(filterByMaterial);
+	}
+
+
+
+
